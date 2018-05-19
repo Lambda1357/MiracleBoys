@@ -1,15 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Precompiled Header">
-      <UniqueIdentifier>{34622d28-03b3-4e50-bf96-8091a304a69f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Common Header">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
     <Filter Include="GameObject">
-      <UniqueIdentifier>{d1dad24e-1155-4592-8600-954e44174a0a}</UniqueIdentifier>
+      <UniqueIdentifier>{fb43267d-2298-4b76-9aa8-4878c36558b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Header\Precompiled Header">
+      <UniqueIdentifier>{34622d28-03b3-4e50-bf96-8091a304a69f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Header\myFunction">
+      <UniqueIdentifier>{cebbb772-5f0d-4600-95a8-7e7e42b1982a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\RenderableObject">
+      <UniqueIdentifier>{926e0faa-e7fc-4c99-953a-3f671ecc3dbc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -20,16 +26,25 @@
       <Filter>Common Header</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
-      <Filter>Precompiled Header</Filter>
+      <Filter>Common Header\Precompiled Header</Filter>
     </ClInclude>
-    <ClInclude Include="IGameObject.h">
+    <ClInclude Include="GameObject.h">
       <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="myFunction.h">
+      <Filter>Common Header\myFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderableObject.h">
+      <Filter>GameObject\RenderableObject</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
-      <Filter>Precompiled Header</Filter>
+      <Filter>Common Header\Precompiled Header</Filter>
     </ClCompile>
     <ClCompile Include="MiracleBoys_SDL.cpp" />
+    <ClCompile Include="RenderableObject.cpp">
+      <Filter>GameObject\RenderableObject</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

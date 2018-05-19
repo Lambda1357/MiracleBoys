@@ -20,6 +20,7 @@
 #include "D:\\SDL\\SDL2-2.0.7\\include\\sdl_main.h"
 
 //Framework
-#include "IGameObject.h"
-
+#include "myFunction.h"
+#include "GameObject.h"
+#include "RenderableObject.h"
 // TODO: 프로그램에 필요한 추가 헤더는 여기에서 참조합니다.
