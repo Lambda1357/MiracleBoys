@@ -17,6 +17,9 @@
     <Filter Include="GameObject\RenderableObject">
       <UniqueIdentifier>{926e0faa-e7fc-4c99-953a-3f671ecc3dbc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameObject\RenderableObject\SplitableObject">
+      <UniqueIdentifier>{9346afa2-8950-4836-a530-bf08bad915b6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
