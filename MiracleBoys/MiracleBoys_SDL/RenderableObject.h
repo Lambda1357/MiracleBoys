@@ -34,6 +34,6 @@ protected:
 	}
 
 	void LoadSprite(SDL_Renderer* pRender, _TCHAR* str);
-	void DrawSprite(SDL_Renderer* pRender);
+	void DrawSprite(SDL_Renderer* pRender) const;
 	void DestroySprite();
 };

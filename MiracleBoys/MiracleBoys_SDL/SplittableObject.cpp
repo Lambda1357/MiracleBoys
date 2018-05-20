@@ -1,0 +1,21 @@
+#include "stdafx.h"
+
+void SplittableObject::SetSpriteSplit(SDL_Rect rtOrigin, bool isHorizonScr, int FrameCnt, int length)
+{
+	splitOrigin		=	rtOrigin;
+	isHorizonScroll	=	isHorizonScr;
+	splitCount		=	FrameCnt;
+	if (!length) splitLength = (isHorizonScroll ? splitOrigin.w : splitOrigin.h);
+	else splitLength = length;
+}
+
+const SplittableObject& SplittableObject::operator[](int index) 
+{
+	SDL_Rect temp;
+	if (isHorizonScroll)	temp.x = splitLength * index;
+	else					temp.y = splitLength * index;
+
+	SetClipRect(temp);
+
+	return *this;
+}

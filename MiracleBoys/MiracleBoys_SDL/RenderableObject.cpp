@@ -10,7 +10,7 @@ void RenderableObject::LoadSprite(SDL_Renderer* pRender, _TCHAR* str)
 	SDL_FreeSurface(tmp);
 }
 
-void RenderableObject::DrawSprite(SDL_Renderer* pRender)
+void RenderableObject::DrawSprite(SDL_Renderer* pRender) const
 {
 	SDL_RenderCopy(pRender, sprite, &GetPosit(), &clipRect);
 }
