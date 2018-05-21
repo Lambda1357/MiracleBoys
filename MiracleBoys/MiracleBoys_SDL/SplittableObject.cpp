@@ -11,11 +11,18 @@ void SplittableObject::SetSpriteSplit(SDL_Rect rtOrigin, bool isHorizonScr, int 
 
 const SplittableObject& SplittableObject::operator[](int index) 
 {
-	SDL_Rect temp;
-	if (isHorizonScroll)	temp.x = splitLength * index;
-	else					temp.y = splitLength * index;
+	if ((0 <= index) && (index < splitCount))
+	{
+		SDL_Rect temp;
+		if (isHorizonScroll)	temp.x = splitLength * index;
+		else					temp.y = splitLength * index;
 
-	SetClipRect(temp);
+		SetClipRect(temp);
+	}
+	else
+	{
+		SDL_Log("Splittable Object out of range.");
+	}
 
 	return *this;
 }
