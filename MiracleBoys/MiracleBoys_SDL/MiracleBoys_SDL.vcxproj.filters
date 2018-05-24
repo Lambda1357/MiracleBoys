@@ -23,6 +23,12 @@
     <Filter Include="Singletone">
       <UniqueIdentifier>{4b3d75e5-07ee-423f-be3c-17a8661b0778}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameObject\RenderableObject\SplittableObject\Character">
+      <UniqueIdentifier>{90bc82dd-8316-47bf-8ae8-d96f3309275a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Header\myFunction">
+      <UniqueIdentifier>{ef66949c-5239-4ee5-9ba2-a06f73be93d5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -49,11 +55,14 @@
     <ClInclude Include="EventHandler.h">
       <Filter>Singletone</Filter>
     </ClInclude>
-    <ClInclude Include="myFunction.h">
-      <Filter>Common Header</Filter>
-    </ClInclude>
     <ClInclude Include="Singletone.h">
       <Filter>Common Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>GameObject\RenderableObject\SplittableObject\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="myFunction.h">
+      <Filter>Common Header\myFunction</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -69,6 +78,12 @@
     </ClCompile>
     <ClCompile Include="EventHandler.cpp">
       <Filter>Singletone</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>GameObject\RenderableObject\SplittableObject\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="myFunction.cpp">
+      <Filter>Common Header\myFunction</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

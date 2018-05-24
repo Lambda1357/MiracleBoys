@@ -139,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Button.h" />
+    <ClInclude Include="Character.h" />
     <ClInclude Include="EventHandler.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="myFunction.h" />
@@ -149,8 +150,10 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Character.cpp" />
     <ClCompile Include="EventHandler.cpp" />
     <ClCompile Include="MiracleBoys_SDL.cpp" />
+    <ClCompile Include="myFunction.cpp" />
     <ClCompile Include="RenderableObject.cpp" />
     <ClCompile Include="SplittableObject.cpp" />
     <ClCompile Include="stdafx.cpp">
