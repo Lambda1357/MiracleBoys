@@ -33,7 +33,7 @@ protected:
 		MoveClipRect(pt.x, pt.y);
 	}
 
-	void LoadSprite(SDL_Renderer* pRender, char* str);
+	void LoadSprite(SDL_Renderer* pRender, const char* str);
 	void DrawSprite(SDL_Renderer* pRender) const;
 	void DestroySprite();
 };

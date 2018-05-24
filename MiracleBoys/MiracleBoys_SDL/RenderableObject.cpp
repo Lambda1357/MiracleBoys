@@ -1,6 +1,6 @@
 #include "stdafx.h"
 
-void RenderableObject::LoadSprite(SDL_Renderer* pRender, char* str)
+void RenderableObject::LoadSprite(SDL_Renderer* pRender, const char* str)
 {
 	SDL_Surface* tmp;
 
