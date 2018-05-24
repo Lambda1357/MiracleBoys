@@ -7,6 +7,8 @@ void SplittableObject::SetSpriteSplit(SDL_Rect rtOrigin, bool isHorizonScr, int 
 	splitCount		=	FrameCnt;
 	if (!length) splitLength = (isHorizonScroll ? splitOrigin.w : splitOrigin.h);
 	else splitLength = length;
+
+	SetClipRect(splitOrigin);
 }
 
 const SplittableObject& SplittableObject::operator[](int index) 
