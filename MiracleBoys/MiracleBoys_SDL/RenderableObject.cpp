@@ -1,13 +1,19 @@
 #include "stdafx.h"
 
-void RenderableObject::LoadSprite(SDL_Renderer* pRender, _TCHAR* str)
+void RenderableObject::LoadSprite(SDL_Renderer* pRender, char* str)
 {
 	SDL_Surface* tmp;
 
-	tmp = SDL_LoadBMP(_T(str));
-	SDL_SetColorKey(tmp, SDL_TRUE, SDL_MapRGB(tmp->format, 255, 0, 255));
-	sprite = SDL_CreateTextureFromSurface(pRender, tmp);
-	SDL_FreeSurface(tmp);
+	if ((tmp = SDL_LoadBMP(str)) != nullptr)
+	{
+		SDL_SetColorKey(tmp, SDL_TRUE, SDL_MapRGB(tmp->format, 255, 0, 255));
+		sprite = SDL_CreateTextureFromSurface(pRender, tmp);
+		SDL_FreeSurface(tmp);
+	}
+	else
+	{
+		SDL_Log("Sprite Address \"%s\" is wrong!", str);
+	}
 }
 
 void RenderableObject::DrawSprite(SDL_Renderer* pRender) const

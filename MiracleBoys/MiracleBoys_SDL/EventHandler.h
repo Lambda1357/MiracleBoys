@@ -19,7 +19,31 @@ private:
 	MOUSESTATE m_MousePrv = { 0 };
 public:
 	void HandleEvent();
-
+	inline bool IsClick(E_MouseButton btn)  const
+	{ 
+		if (0 <= btn&&btn < MOUSEBUTTON_LAST)
+			return m_MouseCur.btn[btn] && (!m_MousePrv.btn[btn]); 
+		else
+		{
+			SDL_Log("EventHandler: Can't Get MouseCode %d.\n", btn);
+			return false;
+		}
+	}
+	inline bool IsPress(E_MouseButton btn)	const
+	{
+		if (0 <= btn&&btn < MOUSEBUTTON_LAST)
+			return m_MouseCur.btn[btn];
+		else
+		{
+			SDL_Log("EventHandler: Can't Get MouseCode %d.\n", btn);
+			return false;
+		}
+	}
+	inline SDL_Point GetMousePosition()
+	{
+		SDL_Point pt = { m_MouseCur.x,m_MouseCur.y };
+		return pt;
+	}
 };
 
 #define EVENTHANDLER EventHandler::GetInstance()

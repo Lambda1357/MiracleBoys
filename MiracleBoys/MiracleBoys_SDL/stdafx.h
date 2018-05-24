@@ -15,6 +15,7 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <functional>
 
 #include "D:\\SDL\\SDL2-2.0.7\\include\\sdl.h"
 #include "D:\\SDL\\SDL2-2.0.7\\include\\sdl_main.h"

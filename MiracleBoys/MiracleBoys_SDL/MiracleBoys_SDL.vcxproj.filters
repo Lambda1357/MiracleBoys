@@ -11,14 +11,17 @@
     <Filter Include="Common Header\Precompiled Header">
       <UniqueIdentifier>{34622d28-03b3-4e50-bf96-8091a304a69f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Common Header\myFunction">
-      <UniqueIdentifier>{cebbb772-5f0d-4600-95a8-7e7e42b1982a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="GameObject\RenderableObject">
       <UniqueIdentifier>{926e0faa-e7fc-4c99-953a-3f671ecc3dbc}</UniqueIdentifier>
     </Filter>
     <Filter Include="GameObject\RenderableObject\SplittableObject">
       <UniqueIdentifier>{9346afa2-8950-4836-a530-bf08bad915b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\RenderableObject\Button">
+      <UniqueIdentifier>{6d0a68ca-2755-4a48-bce5-90ee71edf156}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Singletone">
+      <UniqueIdentifier>{4b3d75e5-07ee-423f-be3c-17a8661b0778}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -34,14 +37,23 @@
     <ClInclude Include="GameObject.h">
       <Filter>GameObject</Filter>
     </ClInclude>
-    <ClInclude Include="myFunction.h">
-      <Filter>Common Header\myFunction</Filter>
-    </ClInclude>
     <ClInclude Include="RenderableObject.h">
       <Filter>GameObject\RenderableObject</Filter>
     </ClInclude>
     <ClInclude Include="SplittableObject.h">
       <Filter>GameObject\RenderableObject\SplittableObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>GameObject\RenderableObject\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="EventHandler.h">
+      <Filter>Singletone</Filter>
+    </ClInclude>
+    <ClInclude Include="myFunction.h">
+      <Filter>Common Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Singletone.h">
+      <Filter>Common Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +64,11 @@
     <ClCompile Include="RenderableObject.cpp">
       <Filter>GameObject\RenderableObject</Filter>
     </ClCompile>
-    <ClCompile Include="SplittableObject.cpp" />
+    <ClCompile Include="SplittableObject.cpp">
+      <Filter>GameObject\RenderableObject\SplittableObject</Filter>
+    </ClCompile>
+    <ClCompile Include="EventHandler.cpp">
+      <Filter>Singletone</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
