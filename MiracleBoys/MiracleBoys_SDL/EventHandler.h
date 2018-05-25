@@ -39,6 +39,16 @@ public:
 			return false;
 		}
 	}
+	inline bool IsButtonUp(E_MouseButton btn)
+	{
+		if (0 <= btn&&btn < MOUSEBUTTON_LAST)
+			return (!m_MouseCur.btn[btn]) && m_MousePrv.btn[btn];
+		else
+		{
+			SDL_Log("EventHandler: Cnat Get MouseCode %d.\n", btn);
+			return false;
+		}
+	}
 	inline SDL_Point GetMousePosition()
 	{
 		SDL_Point pt = { m_MouseCur.x,m_MouseCur.y };
