@@ -44,6 +44,12 @@
     <Filter Include="System\TimeManager\FrameSkip">
       <UniqueIdentifier>{1dd4ccd4-3dd5-4827-9c6a-8378c82d939b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{422d5abd-554a-423c-b811-d28f65faa2cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Interface">
+      <UniqueIdentifier>{4ea5a9dd-ddb8-4237-8a02-5435bea11fed}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -94,6 +100,9 @@
     <ClInclude Include="BaseWindow.h">
       <Filter>System\BaseWindow</Filter>
     </ClInclude>
+    <ClInclude Include="IScene.h">
+      <Filter>Scene\Interface</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -117,9 +126,6 @@
     </ClCompile>
     <ClCompile Include="Button.cpp">
       <Filter>GameObject\RenderableObject\Button</Filter>
-    </ClCompile>
-    <ClCompile Include="Util.cpp">
-      <Filter>Common Header\Util</Filter>
     </ClCompile>
     <ClCompile Include="TimeManager.cpp">
       <Filter>System\TimeManager</Filter>

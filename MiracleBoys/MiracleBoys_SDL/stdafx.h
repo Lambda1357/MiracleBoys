@@ -40,6 +40,9 @@
 
 #include "Character.h"
 
+//씬 구조, 인터페이스 형식에 맞춰 다형성 가질 수 있음.
+#include "IScene.h"
+
 //대진쌤 구조
 #include "Util.h"
 #include "BaseWindow.h"
