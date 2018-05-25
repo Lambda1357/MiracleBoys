@@ -85,5 +85,8 @@
     <ClCompile Include="myFunction.cpp">
       <Filter>Common Header\myFunction</Filter>
     </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>GameObject\RenderableObject\Button</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
