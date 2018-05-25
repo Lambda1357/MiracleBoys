@@ -50,6 +50,9 @@
     <Filter Include="Scene\Interface">
       <UniqueIdentifier>{4ea5a9dd-ddb8-4237-8a02-5435bea11fed}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameObject\RenderableObject\FloatImage">
+      <UniqueIdentifier>{07fde455-e1d9-4787-ae04-6ba091521505}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -102,6 +105,9 @@
     </ClInclude>
     <ClInclude Include="IScene.h">
       <Filter>Scene\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="FloatImage.h">
+      <Filter>GameObject\RenderableObject\FloatImage</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

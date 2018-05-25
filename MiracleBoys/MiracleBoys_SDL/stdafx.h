@@ -37,6 +37,7 @@
 
 #include "SplittableObject.h"
 #include "Button.h"
+#include "FloatImage.h"
 
 #include "Character.h"
 

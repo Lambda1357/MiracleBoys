@@ -142,6 +142,7 @@
     <ClInclude Include="Button.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="EventHandler.h" />
+    <ClInclude Include="FloatImage.h" />
     <ClInclude Include="FrameSkip.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="IScene.h" />
