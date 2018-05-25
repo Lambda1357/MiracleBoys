@@ -4,9 +4,18 @@
 #include "stdafx.h"
 
 
-int main()
+int main(int argc, char* argv[])
 {
-	
-    return 0;
+	CSystem* pSystem = new CSystem; //메모리 할당, 객체 생성
+
+	pSystem->Initialize(); //pSystem 초기화
+
+	pSystem->Run(); //
+
+	pSystem->Terminate();
+
+	delete pSystem;
+
+	return 0;
 }
 

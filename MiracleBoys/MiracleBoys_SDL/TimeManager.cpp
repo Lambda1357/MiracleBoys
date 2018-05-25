@@ -1,5 +1,4 @@
 #include "stdafx.h"
-#include "TimeManager.h"
 
 
 CTimeManager::CTimeManager(void)

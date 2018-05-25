@@ -1,4 +1,4 @@
-#include "Util.h"
+#include "stdafx.h"
 
 void BtnUpFunc()
 {

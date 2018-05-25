@@ -8,5 +8,7 @@
 // 이 파일이 아닌 STDAFX.H에서 참조합니다.
 
 //라이브러리 링크
+#pragma comment(lib, "Winmm.lib")
+
 #pragma comment(lib, "D:\\SDL\\SDL2-2.0.7\\lib\\x86\\SDL2.lib")
 #pragma comment(lib, "D:\\SDL\\SDL2-2.0.7\\lib\\x86\\SDL2main.lib")
