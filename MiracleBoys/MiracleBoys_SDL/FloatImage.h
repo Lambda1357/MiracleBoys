@@ -17,7 +17,7 @@ public:
 		LoadSprite(pRender, (FIMAGE_FILEADDR + str + FIMAGE_ADDR_SPRITE).c_str());
 	}
 
-	//flase를 반환하면 생성한 씬에서 삭제해주도록 처리
+	//false를 반환하면 생성한 씬에서 삭제해주도록 처리
 	bool UpdateChack()
 	{
 		SDL_Point ptTemp = EVENTHANDLER->GetMousePosition();
@@ -28,6 +28,11 @@ public:
 
 		if (isCursurOutBox&&isLButtonClick) return false;
 		else return true;
+	}
+
+	void Render(SDL_Renderer* pRender)
+	{
+		DrawSprite(pRender);
 	}
 
 	~FloatImage()
