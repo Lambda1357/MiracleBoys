@@ -4,12 +4,17 @@
 //
 
 #pragma once
+#define WIN32_LEAN_AND_MEAN
 
 #include "targetver.h"
+
+//Windows
+#include <Windows.h>
 
 //C
 #include <stdio.h>
 #include <tchar.h>
+#include <time.h>
 
 //C++
 #include <iostream>
@@ -35,5 +40,13 @@
 #include "Button.h"
 
 #include "Character.h"
+
+//대진쌤 구조
+#include "Util.h"
+#include "BaseWindow.h"
+#include "TimeManager.h"
+#include "FrameSkip.h"
+
+#include "System.h"
 
 // TODO: 프로그램에 필요한 추가 헤더는 여기에서 참조합니다.

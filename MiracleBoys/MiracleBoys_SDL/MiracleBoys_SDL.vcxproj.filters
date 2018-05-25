@@ -29,6 +29,21 @@
     <Filter Include="Common Header\myFunction">
       <UniqueIdentifier>{ef66949c-5239-4ee5-9ba2-a06f73be93d5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Common Header\Util">
+      <UniqueIdentifier>{dd8246dc-a3d1-45d9-8835-6c9768a810bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{19db5151-db61-4d7d-84ab-165da3c1f8d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\TimeManager">
+      <UniqueIdentifier>{119412fe-26b1-4af8-9d11-ed72c2636e2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\BaseWindow">
+      <UniqueIdentifier>{ef2893f6-5ed7-49b3-af91-4128e694ba45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\TimeManager\FrameSkip">
+      <UniqueIdentifier>{1dd4ccd4-3dd5-4827-9c6a-8378c82d939b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -64,6 +79,21 @@
     <ClInclude Include="myFunction.h">
       <Filter>Common Header\myFunction</Filter>
     </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Common Header\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>System\TimeManager</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameSkip.h">
+      <Filter>System\TimeManager\FrameSkip</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseWindow.h">
+      <Filter>System\BaseWindow</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -87,6 +117,21 @@
     </ClCompile>
     <ClCompile Include="Button.cpp">
       <Filter>GameObject\RenderableObject\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Common Header\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>System\TimeManager</Filter>
+    </ClCompile>
+    <ClCompile Include="System.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameSkip.cpp">
+      <Filter>System\TimeManager\FrameSkip</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseWindow.cpp">
+      <Filter>System\BaseWindow</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
