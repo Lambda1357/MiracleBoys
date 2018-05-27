@@ -16,6 +16,9 @@ private:
 	SDL_Texture* standImg;
 	int frameDelay;
 	bool isAnimate;
+	bool isFirstAnimationStop;
+	int	curFrameDelay;
+	int	index;
 	
 public:
 	inline void SetAnimate(bool input)	{ isAnimate = input; }
