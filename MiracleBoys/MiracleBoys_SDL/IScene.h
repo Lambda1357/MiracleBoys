@@ -1,4 +1,7 @@
 #pragma once
+
+#define SCENE_BACKGROUND_FILEADDR "./Resource/Background/"
+
 class CSystem;
 
 class IScene
