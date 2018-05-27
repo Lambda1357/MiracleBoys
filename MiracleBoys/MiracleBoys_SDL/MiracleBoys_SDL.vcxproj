@@ -147,6 +147,7 @@
     <ClInclude Include="FrameSkip.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="IScene.h" />
+    <ClInclude Include="ListButton.h" />
     <ClInclude Include="MusicManager.h" />
     <ClInclude Include="myFunction.h" />
     <ClInclude Include="PlayScene.h" />
@@ -167,8 +168,10 @@
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="EventHandler.cpp" />
     <ClCompile Include="FrameSkip.cpp" />
+    <ClCompile Include="ListButton.cpp" />
     <ClCompile Include="MiracleBoys_SDL.cpp" />
     <ClCompile Include="myFunction.cpp" />
+    <ClCompile Include="PlayScene.cpp" />
     <ClCompile Include="RenderableObject.cpp" />
     <ClCompile Include="SplittableObject.cpp" />
     <ClCompile Include="StartScene.cpp" />

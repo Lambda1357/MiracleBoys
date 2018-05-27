@@ -21,6 +21,7 @@
 #include <map>
 #include <functional>
 #include <string>
+#include <list>
 
 #include "D:\\SDL\\SDL2-2.0.7\\include\\sdl.h"
 #include "D:\\SDL\\SDL2-2.0.7\\include\\sdl_main.h"
@@ -37,16 +38,18 @@
 #include "GameObject.h"
 
 #include "RenderableObject.h"
+#include "Button.h"
 
 #include "SplittableObject.h"
-#include "Button.h"
 #include "FloatImage.h"
+#include "ListButton.h"
 
 #include "Character.h"
 
 //씬 구조, 인터페이스 형식에 맞춰 다형성 가질 수 있음.
 #include "IScene.h"
 #include "StartScene.h"
+#include "PlayScene.h"
 
 //대진쌤 구조
 #include "Util.h"

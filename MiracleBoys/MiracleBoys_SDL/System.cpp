@@ -23,7 +23,11 @@ bool CSystem::Initialize()
 	sceneArray[STARTSCENE] = new StartScene;
 	sceneArray[STARTSCENE]->Init(const_cast<CSystem*>(this), m_pRender);
 
-	EVENTHANDLER->GetInstance();
+	sceneArray[PLAYSCENE] = new PlayScene;
+	sceneArray[PLAYSCENE]->Init(const_cast<CSystem*>(this), m_pRender);
+
+	EVENTHANDLER;
+	MUSICMANAGER->SetUp();
 	SCENEMANAGER->SetCurrentScene(STARTSCENE);
 
 	return true;
@@ -59,6 +63,7 @@ void CSystem::Terminate()
 	//여기에 해제 코드를 넣으세요
 
 	SCENEMANAGER->DestroyInstance();
+	MUSICMANAGER->DestroyInstance();
 	EVENTHANDLER->DestroyInstance();
 
 	sceneArray[STARTSCENE]->Destroy();

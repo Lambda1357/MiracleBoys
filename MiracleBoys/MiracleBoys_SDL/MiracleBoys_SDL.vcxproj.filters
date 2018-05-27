@@ -68,6 +68,9 @@
     <Filter Include="Singletone\MusicManager">
       <UniqueIdentifier>{413c738e-25be-444d-92b1-f10b40c6fe8b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameObject\RenderableObject\SplittableObject\ListButton">
+      <UniqueIdentifier>{c61b6adb-6b51-4ea1-8a1a-af2d6bd5fc43}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -136,6 +139,9 @@
     <ClInclude Include="MusicManager.h">
       <Filter>Singletone\MusicManager</Filter>
     </ClInclude>
+    <ClInclude Include="ListButton.h">
+      <Filter>GameObject\RenderableObject\SplittableObject\ListButton</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -175,5 +181,9 @@
     <ClCompile Include="EventHandler.cpp">
       <Filter>Singletone\EventHandler</Filter>
     </ClCompile>
+    <ClCompile Include="ListButton.cpp">
+      <Filter>GameObject\RenderableObject\SplittableObject\ListButton</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayScene.cpp" />
   </ItemGroup>
 </Project>

@@ -23,6 +23,7 @@ public:
 	{
 		playState = STOP;
 		ElipseTime = 0;
+		curTrackNum = 0;
 		for (int i = 0; i < MUSIC_END; i++)
 		{
 			mciSendString(("stop " + MUSIC_ADDRESS(std::to_string(i))).c_str(), NULL, 0, NULL);
@@ -87,4 +88,16 @@ public:
 		float temp = ElipseTime / 60.0f;
 		return (int)floor(temp);
 	}
+
+	int GetCurTrack()
+	{
+		return curTrackNum;
+	}
+
+	E_PlayState GetState()
+	{
+		return playState;
+	}
 };
+
+#define MUSICMANAGER MusicManager::GetInstance()

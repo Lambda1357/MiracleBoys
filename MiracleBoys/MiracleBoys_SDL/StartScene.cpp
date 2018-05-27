@@ -13,7 +13,7 @@ void StartScene::Init(CSystem* m_perent, SDL_Renderer* m_pRender)
 	MySetRect(rtTemp, 546, 502, 204, 74);
 	temp->Init(pRender, "Start", rtTemp, [&]() 
 	{
-		perent->ChangeScene(MAINGAME);
+		perent->ChangeScene(PLAYSCENE);
 	});
 	btnArray.push_back(temp);
 
