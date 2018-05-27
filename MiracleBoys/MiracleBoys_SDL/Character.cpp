@@ -54,7 +54,7 @@ void Character::Render(SDL_Renderer* pRender) const
 {
 	//업데이트에서 처리된 상태대로 출력
 	if (isAnimate)	DrawSprite(pRender);
-	else			SDL_RenderCopy(pRender, standImg, &GetPosit(), NULL);
+	else			SDL_RenderCopy(pRender, standImg, NULL, &GetPosit());
 }
 
 void Character::Destroy()
