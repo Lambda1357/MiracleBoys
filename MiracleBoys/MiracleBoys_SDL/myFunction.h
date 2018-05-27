@@ -10,3 +10,11 @@ inline void Swap(T& v1, T& v2)
 }
 
 SDL_Texture* MyLoadTextureFromAddress(SDL_Renderer* pRender, std::string addr);
+
+inline void MySetRect(SDL_Rect& rct, int x, int y, int w, int h)
+{
+	rct.x = x;
+	rct.y = y;
+	rct.w = w;
+	rct.h = h;
+}
