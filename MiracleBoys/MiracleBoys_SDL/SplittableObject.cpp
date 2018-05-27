@@ -5,19 +5,19 @@ void SplittableObject::SetSpriteSplit(SDL_Rect rtOrigin, bool isHorizonScr, int 
 	splitOrigin		=	rtOrigin;
 	isHorizonScroll	=	isHorizonScr;
 	splitCount		=	FrameCnt;
-	if (!length) splitLength = (isHorizonScroll ? splitOrigin.w : splitOrigin.h);
+	if (!length) splitLength = (isHorizonScroll ? rtOrigin.w : rtOrigin.h);
 	else splitLength = length;
 
-	SetClipRect(splitOrigin);
+	SetClipRect(rtOrigin);
 }
 
 const SplittableObject& SplittableObject::operator[](int index) 
 {
 	if ((0 <= index) && (index < splitCount))
 	{
-		SDL_Rect temp;
-		if (isHorizonScroll)	temp.x = splitLength * index;
-		else					temp.y = splitLength * index;
+		SDL_Rect temp = { 0,0,splitOrigin.w,splitOrigin.h };
+		if (isHorizonScroll)	temp.x = splitOrigin.w * index;
+		else					temp.y = splitOrigin.h * index;
 
 		SetClipRect(temp);
 	}
