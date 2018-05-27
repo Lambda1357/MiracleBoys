@@ -53,6 +53,15 @@
     <Filter Include="GameObject\RenderableObject\FloatImage">
       <UniqueIdentifier>{07fde455-e1d9-4787-ae04-6ba091521505}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Scene\StartScene">
+      <UniqueIdentifier>{a07bf406-4fae-4ba8-8b59-9f0439e41472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Singletone\EventHandler">
+      <UniqueIdentifier>{7787aea4-caa0-4cd7-8d6c-a6df84898434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Singletone\SceneManager">
+      <UniqueIdentifier>{275db40f-23fc-4f5b-94a4-c10f2a6107b8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -75,9 +84,6 @@
     </ClInclude>
     <ClInclude Include="Button.h">
       <Filter>GameObject\RenderableObject\Button</Filter>
-    </ClInclude>
-    <ClInclude Include="EventHandler.h">
-      <Filter>Singletone</Filter>
     </ClInclude>
     <ClInclude Include="Singletone.h">
       <Filter>Common Header</Filter>
@@ -109,6 +115,15 @@
     <ClInclude Include="FloatImage.h">
       <Filter>GameObject\RenderableObject\FloatImage</Filter>
     </ClInclude>
+    <ClInclude Include="StartScene.h">
+      <Filter>Scene\StartScene</Filter>
+    </ClInclude>
+    <ClInclude Include="EventHandler.h">
+      <Filter>Singletone\EventHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Singletone\SceneManager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -120,9 +135,6 @@
     </ClCompile>
     <ClCompile Include="SplittableObject.cpp">
       <Filter>GameObject\RenderableObject\SplittableObject</Filter>
-    </ClCompile>
-    <ClCompile Include="EventHandler.cpp">
-      <Filter>Singletone</Filter>
     </ClCompile>
     <ClCompile Include="Character.cpp">
       <Filter>GameObject\RenderableObject\SplittableObject\Character</Filter>
@@ -144,6 +156,12 @@
     </ClCompile>
     <ClCompile Include="BaseWindow.cpp">
       <Filter>System\BaseWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="StartScene.cpp">
+      <Filter>Scene\StartScene</Filter>
+    </ClCompile>
+    <ClCompile Include="EventHandler.cpp">
+      <Filter>Singletone\EventHandler</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

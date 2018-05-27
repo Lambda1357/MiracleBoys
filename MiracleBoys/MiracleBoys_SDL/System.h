@@ -5,6 +5,7 @@ class CSystem : public CBaseWindow,
 {	
 private:
 	CFrameSkip*		m_pGameFrame;
+	std::vector<IScene*> sceneArray;
 
 public:
 	CSystem(void);
@@ -17,4 +18,6 @@ public:
 	bool Initialize();
 	void Terminate();
 	void Run();
+
+	void ChangeScene(SCENENUMBER sn);
 };

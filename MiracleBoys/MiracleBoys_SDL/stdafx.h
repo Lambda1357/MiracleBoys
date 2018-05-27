@@ -29,6 +29,7 @@
 #include "Singletone.h"
 #include "myFunction.h"
 #include "EventHandler.h"
+#include "SceneManager.h"
 
 //계층 구조로 설계된 게임오브젝트. 상속 계층에 맞게 포함
 #include "GameObject.h"
@@ -43,6 +44,7 @@
 
 //씬 구조, 인터페이스 형식에 맞춰 다형성 가질 수 있음.
 #include "IScene.h"
+#include "StartScene.h"
 
 //대진쌤 구조
 #include "Util.h"
