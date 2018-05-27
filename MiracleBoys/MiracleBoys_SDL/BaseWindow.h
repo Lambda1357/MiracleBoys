@@ -16,10 +16,17 @@ public:
 	void Terminate();
 
 	__inline SDL_Window* GetHandle() const;
+
+	__inline void StopGameRun();
 };
 
 __inline SDL_Window* CBaseWindow::GetHandle() const
 {
 	return m_pWnd;
+}
+
+__inline void CBaseWindow::StopGameRun()
+{
+	m_bIsGameRun = SDL_FALSE;
 }
 
