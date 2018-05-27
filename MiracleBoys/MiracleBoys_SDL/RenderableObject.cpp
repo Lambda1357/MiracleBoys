@@ -24,7 +24,7 @@ void RenderableObject::LoadSprite(SDL_Renderer* pRender, const char* str)
 
 void RenderableObject::DrawSprite(SDL_Renderer* pRender) const
 {
-	SDL_RenderCopy(pRender, sprite, &GetPosit(), &clipRect);
+	SDL_RenderCopy(pRender, sprite, &clipRect, &GetPosit());
 }
 
 void RenderableObject::DestroySprite()

@@ -48,9 +48,10 @@ void Button::Update()
 	case Button::CLICK:
 		if (isMouseOver)
 		{
-			if (isLButtonClick || isLButtonPress)
+			if (isLButtonClick || isLButtonPress||isLButtonUp)
 			{
-				if (isLButtonUp) ButtonBehavior();
+				if (isLButtonUp) 
+					ButtonBehavior();
 			}
 			else e_bState = MOUSEOVER;
 		}
@@ -68,10 +69,10 @@ void Button::Render(SDL_Renderer* pRender)
 		DrawSprite(pRender);
 		break;
 	case Button::MOUSEOVER:
-		SDL_RenderCopy(pRender, mouseOver, &GetPosit(), NULL);
+		SDL_RenderCopy(pRender, mouseOver, NULL, &GetPosit());
 		break;
 	case Button::CLICK:
-		SDL_RenderCopy(pRender, click, &GetPosit(), NULL);
+		SDL_RenderCopy(pRender, click, NULL, &GetPosit());
 		break;
 	}
 }
