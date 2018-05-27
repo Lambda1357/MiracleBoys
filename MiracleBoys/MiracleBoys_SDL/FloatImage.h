@@ -21,12 +21,14 @@ public:
 	bool UpdateChack()
 	{
 		SDL_Point ptTemp = EVENTHANDLER->GetMousePosition();
-		SDL_Rect  rtTemp = GetPosit();
-		bool	  isCursurOutBox =	((rtTemp.x >= ptTemp.x) && (ptTemp.x >= (rtTemp.x + rtTemp.w))) &&
-									((rtTemp.y >= ptTemp.y) && (ptTemp.y >= (rtTemp.y + rtTemp.h)));
+		SDL_Rect  rtTemp = { 619,570,68,68 };
+		bool	  isCursurOnBox =	((rtTemp.x <= ptTemp.x) && (ptTemp.x <= (rtTemp.x + rtTemp.w))) &&
+									((rtTemp.y <= ptTemp.y) && (ptTemp.y <= (rtTemp.y + rtTemp.h)));
 		bool	  isLButtonClick = EVENTHANDLER->IsClick(E_MouseButton::LEFT);
+		bool	  isLButtonPress = EVENTHANDLER->IsPress(E_MouseButton::LEFT);
 
-		if (isCursurOutBox&&isLButtonClick) return false;
+		if (isCursurOnBox&&(isLButtonClick||isLButtonPress)) 
+			return false;
 		else return true;
 	}
 
