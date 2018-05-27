@@ -20,6 +20,7 @@
 #include <vector>
 #include <map>
 #include <functional>
+#include <string>
 
 #include "D:\\SDL\\SDL2-2.0.7\\include\\sdl.h"
 #include "D:\\SDL\\SDL2-2.0.7\\include\\sdl_main.h"
@@ -30,6 +31,7 @@
 #include "myFunction.h"
 #include "EventHandler.h"
 #include "SceneManager.h"
+#include "MusicManager.h"
 
 //계층 구조로 설계된 게임오브젝트. 상속 계층에 맞게 포함
 #include "GameObject.h"

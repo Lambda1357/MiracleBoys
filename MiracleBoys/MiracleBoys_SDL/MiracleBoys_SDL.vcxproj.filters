@@ -62,6 +62,12 @@
     <Filter Include="Singletone\SceneManager">
       <UniqueIdentifier>{275db40f-23fc-4f5b-94a4-c10f2a6107b8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Scene\PlayScene">
+      <UniqueIdentifier>{cd75152f-9a69-496e-a0e1-00ea37129d46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Singletone\MusicManager">
+      <UniqueIdentifier>{413c738e-25be-444d-92b1-f10b40c6fe8b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -123,6 +129,12 @@
     </ClInclude>
     <ClInclude Include="SceneManager.h">
       <Filter>Singletone\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayScene.h">
+      <Filter>Scene\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicManager.h">
+      <Filter>Singletone\MusicManager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
