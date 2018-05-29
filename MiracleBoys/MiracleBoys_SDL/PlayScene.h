@@ -1,5 +1,7 @@
 #pragma once
 
+#define ANIMATEDATA_FILEADDR	"./Resource/AnimateData/"
+
 enum E_CharaList
 {
 	ANGEL,HEART,MINO,UNICORN,YONGHU,CHARALIST_END
@@ -19,14 +21,18 @@ public:
 class PlayScene : public IScene
 {
 private:
-	SDL_Texture* bg;
-	ListButton* musicList[MUSIC_END];
-	std::vector<Button*> btnArray;
-	Character* CharaList[CHARALIST_END];
-	std::map<int, AnimateData> aniData[MUSIC_END];
-	std::map<int, AnimateData>::iterator curNode;
+	SDL_Texture*							bg;
+	ListButton*								musicList[MUSIC_END];
+	std::vector<Button*>					btnArray;
+	Character*								CharaList[CHARALIST_END];
+
+	std::map<int, AnimateData>				aniData[MUSIC_END];
+	std::map<int, AnimateData>::iterator	curNode, prvNode;
+
 	void SetAniData();
 	void ApplyCurNode();
+	void ApplyPrvNode();
+	void StopAnimate();
 
 public:
 	virtual void Init(CSystem* perent, SDL_Renderer* pRender);
