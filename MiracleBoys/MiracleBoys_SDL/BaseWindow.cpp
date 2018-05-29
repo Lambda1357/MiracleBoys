@@ -13,7 +13,7 @@ CBaseWindow::~CBaseWindow(void)
 
 bool CBaseWindow::Initialize()
 {
-	m_pWnd = SDL_CreateWindow("SDL_GameBase", 100, 100, SCREEN_WIDTH, SCREEN_HEIGHT, 0);
+	m_pWnd = SDL_CreateWindow("Miracle Boys!", 100, 100, SCREEN_WIDTH, SCREEN_HEIGHT, 0);
 	m_pRender = SDL_CreateRenderer(m_pWnd, -1, 0);
 
 	return true;
