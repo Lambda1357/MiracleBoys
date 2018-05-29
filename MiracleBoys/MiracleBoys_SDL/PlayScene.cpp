@@ -4,52 +4,87 @@ void PlayScene::SetAniData()
 {
 	//0번 뜨거운 감자
 	{
-		aniData[0].insert(std::pair<int, AnimateData>(0, AnimateData(0, 1, 1, 0, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(1, AnimateData(1, 1, 1, 0, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(2, AnimateData(0, 1, 1, 1, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(3, AnimateData(1, 1, 1, 0, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(5, AnimateData(0, 1, 1, 1, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(6, AnimateData(1, 1, 1, 0, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(7, AnimateData(0, 1, 1, 1, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(8, AnimateData(1, 1, 1, 0, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(9, AnimateData(1, 1, 1, 1, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(10, AnimateData(1, 0, 0, 1, 0)));
+		aniData[0].insert(std::pair<int, AnimateData>(0, AnimateData(0, 1, 1, 0, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(1, AnimateData(1, 1, 1, 0, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(2, AnimateData(0, 1, 1, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(3, AnimateData(1, 1, 1, 0, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(5, AnimateData(0, 1, 1, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(6, AnimateData(1, 1, 1, 0, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(7, AnimateData(0, 1, 1, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(8, AnimateData(1, 1, 1, 0, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(9, AnimateData(1, 1, 1, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(10, AnimateData(1, 0, 0, 1, 1)));
 		aniData[0].insert(std::pair<int, AnimateData>(11, AnimateData(0, 1, 1, 0, 1)));
-		aniData[0].insert(std::pair<int, AnimateData>(12, AnimateData(1, 1, 1, 0, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(23, AnimateData(0, 1, 1, 1, 0)));
+		aniData[0].insert(std::pair<int, AnimateData>(12, AnimateData(1, 1, 1, 0, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(23, AnimateData(0, 1, 1, 1, 1)));
 		aniData[0].insert(std::pair<int, AnimateData>(24, AnimateData(0, 0, 0, 1, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(25, AnimateData(0, 1, 1, 1, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(32, AnimateData(1, 1, 1, 0, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(36, AnimateData(0, 0, 0, 1, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(37, AnimateData(0, 1, 1, 1, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(42, AnimateData(1, 1, 1, 0, 0)));
+		aniData[0].insert(std::pair<int, AnimateData>(25, AnimateData(0, 1, 1, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(32, AnimateData(1, 1, 1, 0, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(36, AnimateData(0, 0, 0, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(37, AnimateData(0, 1, 1, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(42, AnimateData(1, 1, 1, 0, 1)));
 		aniData[0].insert(std::pair<int, AnimateData>(45, AnimateData(0, 1, 1, 0, 1)));
 		aniData[0].insert(std::pair<int, AnimateData>(46, AnimateData(0, 0, 0, 0, 1)));
 		aniData[0].insert(std::pair<int, AnimateData>(47, AnimateData(0, 1, 1, 1, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(60, AnimateData(1, 1, 1, 0, 0)));
-		aniData[0].insert(std::pair<int, AnimateData>(70, AnimateData(0, 1, 1, 1, 0)));
-		//여기까지만 함
-		aniData[0].insert(std::pair<int, AnimateData>(11, AnimateData(1, 1, 1, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(48, AnimateData(0, 1, 1, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(60, AnimateData(1, 1, 1, 0, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(70, AnimateData(0, 1, 1, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(71, AnimateData(0, 0, 0, 1, 0)));
+		aniData[0].insert(std::pair<int, AnimateData>(72, AnimateData(1, 1, 1, 0, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(77, AnimateData(0, 0, 0, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(78, AnimateData(0, 1, 0, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(84, AnimateData(0, 0, 0, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(85, AnimateData(0, 1, 0, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(87, AnimateData(1, 1, 1, 0, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(90, AnimateData(0, 0, 0, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(91, AnimateData(0, 1, 0, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(96, AnimateData(1, 1, 1, 0, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(99, AnimateData(0, 1, 0, 0, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(101, AnimateData(0, 1, 0, 1, 0)));
+		aniData[0].insert(std::pair<int, AnimateData>(102, AnimateData(0, 1, 0, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(114, AnimateData(1, 1, 1, 0, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(125, AnimateData(0, 1, 0, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(126, AnimateData(1, 1, 1, 0, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(138, AnimateData(0, 1, 0, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(150, AnimateData(0, 0, 0, 1, 0)));
+		aniData[0].insert(std::pair<int, AnimateData>(151, AnimateData(0, 0, 0, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(152, AnimateData(0, 1, 0, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(162, AnimateData(1, 1, 1, 0, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(173, AnimateData(0, 1, 0, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(174, AnimateData(1, 1, 1, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(176, AnimateData(1, 1, 1, 0, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(184, AnimateData(0, 1, 0, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(185, AnimateData(0, 0, 0, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(186, AnimateData(0, 1, 0, 0, 0)));
+		aniData[0].insert(std::pair<int, AnimateData>(187, AnimateData(1, 1, 1, 1, 0)));
+		aniData[0].insert(std::pair<int, AnimateData>(189, AnimateData(1, 1, 1, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(191, AnimateData(0, 1, 0, 1, 1)));
+		aniData[0].insert(std::pair<int, AnimateData>(192, AnimateData(0, 0, 0, 1, 0)));
+		aniData[0].insert(std::pair<int, AnimateData>(194, AnimateData(0, 0, 0, 0, 0)));
 	}
 
 	//1번
 	{
 		aniData[1].insert(std::pair<int, AnimateData>(0, AnimateData(1, 1, 1, 1, 1)));
+		aniData[1].insert(std::pair<int, AnimateData>(196, AnimateData(0, 0, 0, 0, 0)));
 	}
 
 	//2번
 	{
 		aniData[2].insert(std::pair<int, AnimateData>(0, AnimateData(1, 1, 1, 1, 1)));
+		aniData[2].insert(std::pair<int, AnimateData>(224, AnimateData(0, 0, 0, 0, 0)));
 	}
 
 	//3번
 	{
 		aniData[3].insert(std::pair<int, AnimateData>(0, AnimateData(1, 1, 1, 1, 1)));
+		aniData[3].insert(std::pair<int, AnimateData>(197, AnimateData(0, 0, 0, 0, 0)));
 	}
 	
 	//4번
 	{
 		aniData[4].insert(std::pair<int, AnimateData>(0, AnimateData(1, 1, 1, 1, 1)));
+		aniData[4].insert(std::pair<int, AnimateData>(178, AnimateData(0, 0, 0, 0, 0)));
 	}
 }
 
@@ -206,17 +241,18 @@ void PlayScene::Render(SDL_Renderer * pRender)
 {
 	SDL_RenderCopy(pRender, bg, NULL, NULL);
 
+	CharaList[YONGHU]->Render(pRender);
+	CharaList[MINO]->Render(pRender);
+	CharaList[HEART]->Render(pRender);
+	CharaList[UNICORN]->Render(pRender);
+	CharaList[ANGEL]->Render(pRender);
+
 	for (auto iter = btnArray.begin(); iter != btnArray.end(); iter++)
 		(*iter)->Render(pRender);
 	for (int i = 0; i < MUSIC_END; i++)
 	{
 		musicList[i]->Render(pRender);
 	}
-	CharaList[YONGHU]->Render(pRender);
-	CharaList[MINO]->Render(pRender);
-	CharaList[HEART]->Render(pRender);
-	CharaList[UNICORN]->Render(pRender);
-	CharaList[ANGEL]->Render(pRender);
 }
 
 void PlayScene::Destroy()
