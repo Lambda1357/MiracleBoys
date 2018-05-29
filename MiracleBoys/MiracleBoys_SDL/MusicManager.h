@@ -69,8 +69,8 @@ public:
 				mciSendString(("stop " + MUSIC_ADDRESS(std::to_string(curTrackNum))).c_str(), NULL, 0, NULL);
 				ElipseTime = 0;
 				playState = STOP;
-				curTrackNum = num;
 			}
+			curTrackNum = num;
 		}
 		else
 			SDL_Log("MusicManager: Change Track Failed. %d is not Music code!", num);

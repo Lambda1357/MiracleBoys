@@ -184,6 +184,8 @@
     <ClCompile Include="ListButton.cpp">
       <Filter>GameObject\RenderableObject\SplittableObject\ListButton</Filter>
     </ClCompile>
-    <ClCompile Include="PlayScene.cpp" />
+    <ClCompile Include="PlayScene.cpp">
+      <Filter>Scene\PlayScene</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
