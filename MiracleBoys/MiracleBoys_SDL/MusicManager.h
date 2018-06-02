@@ -1,6 +1,7 @@
 #pragma once
 
-#define MUSIC_ADDRESS(name)	(std::string("./resource/Music/")+name+".mp3")
+#define MUSIC_ADDRESS(name)		(std::string("./resource/Music/")+name+".mp3")
+#define MUSICDATA_ADDR(name)	(std::string("./resource/Music/")+name+".txt")
 #define MUSIC_END 5
 
 enum E_PlayState
