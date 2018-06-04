@@ -8,6 +8,9 @@ protected:
 
 	SDL_bool		m_bIsGameRun;
 
+	int originW;
+	int originH;
+
 public:
 	CBaseWindow(void);
 	~CBaseWindow(void);
