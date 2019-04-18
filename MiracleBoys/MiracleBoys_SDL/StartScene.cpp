@@ -46,7 +46,7 @@ void StartScene::Init(CSystem* m_perent, SDL_Renderer* m_pRender)
 
 void StartScene::Update()
 {
-	//현재 플로트가 존재한다면 플로트만 업데이트, 플로트에서 참이 반환된다면 창 삭제
+	//현재 플로팅 창이 존재한다면 창만 업데이트, 플로팅 창에서 참이 반환된다면 창 삭제
 	if (curFloat)
 	{
 		if (!curFloat->UpdateChack())
