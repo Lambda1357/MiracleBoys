@@ -4,7 +4,7 @@ class SplittableObject : protected RenderableObject
 {
 private:
 	int			splitLength;		//스프라이트를 splitLength만큼 일정하게 자름
-	bool		isHorizonScroll;	//가로로 이미지를 자른다면 true, 세로로 자른다면 false
+	bool		isDiractionHorizon;	//가로로 이미지를 자른다면 true, 세로로 자른다면 false
 	int			splitCount;			//스프라이트를 자르는 개수
 	SDL_Rect	splitOrigin;		//스프라이트의 첫 프레임, 스크롤링이 아닌 변의 폭은 이 변수로 정해진다.
 
